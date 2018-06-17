@@ -61,7 +61,7 @@ Tutorial materials are in `jupyter notebook``.
    
 ## Data analysis examples
 
-We also use the data analysis we presented in Ye et al. (2017) JGR in Jupyter notebook in the tutorial.
+We also use the data analysis we presented in [Ye et al. (2017) JGR](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2016JB013811) in Jupyter notebook in the tutorial.
 
 1. Go back to your home folder, make a separate folder, and move to the folder.
    ```bash
@@ -82,4 +82,6 @@ Now you are all set!
 [Pytheos Github](https://github.com/SHDShim/pytheos) 
 
 [Pytheos documentation](https://shdshim.github.io/pytheos-docs/) 
+
+[Ye et al. (2017) JGR](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2016JB013811)
 
