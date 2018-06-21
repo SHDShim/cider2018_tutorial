@@ -35,26 +35,26 @@ import pytheos as eos
 
 # ## 2.1. Reading Pt-MgO (PM) and Au-MgO (AM) at High T
 
-# In[7]:
+# In[3]:
 
 
 data_PM = pd.read_csv('./data/Pt_MgO_HiT.csv')
 data_AM = pd.read_csv('./data/Au_MgO_HiT.csv')
 
 
-# In[8]:
-
-
-data_PMN_300.tail()
-
-
 # In[9]:
 
 
-data_AMN_300.tail()
+data_PM.tail()
 
 
 # In[10]:
+
+
+data_AM.tail()
+
+
+# In[5]:
 
 
 v_Pt_PM    = data_PM['V(Pt)'] 
@@ -74,7 +74,7 @@ s_T_AM  = data_AM['sT']
 
 # ## 2.2. Define Pt, Au, and MgO scales
 
-# In[11]:
+# In[6]:
 
 
 std_MgO =[ eos.periclase.Speziale2001(), eos.periclase.Dorogokupets2007(),              eos.periclase.Tange2009(), eos.periclase.Dorogokupets2015()]
@@ -84,7 +84,7 @@ std_Pt =[ eos.platinum.Fei2007bm3(), eos.platinum.Dorogokupets2007(),           
 
 # # 3. Comparing scales
 
-# In[12]:
+# In[7]:
 
 
 p_MgO_PM = []; p_MgO_AM = []; p_Pt_PM = []; p_Au_AM = [] 
@@ -99,7 +99,7 @@ for i in range(4):
     p_Au_AM.append(p_Au_AM_t)
 
 
-# In[13]:
+# In[8]:
 
 
 f, axarr = plt.subplots(2, 2,                     figsize=(8,6))
